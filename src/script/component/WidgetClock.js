@@ -1,4 +1,3 @@
-import $ from "jquery";
 import moment from "moment";
 
 class WidgetClock extends HTMLElement {
@@ -27,7 +26,6 @@ class WidgetClock extends HTMLElement {
     }
 
     displayTime() {
-        moment.locale("id");
         this.time = moment().format("LTS");
         this.date = moment().format("LL");
         this.render();

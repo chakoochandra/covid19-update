@@ -37,24 +37,28 @@ nav {
   top: 0;
 }
 nav li {
+  color: #b66dff;
   display: inline;
   list-style-type: none;
   margin-right: 20px;
 }
 nav li span:visited,
 nav li span {
+  cursor: pointer;
   margin: 0;
   padding: 0 3px 10px 3px;
+}
+header nav li span:visited,
+header nav li span {
   color: #ffffff;
   background-color: #232323;
   border-bottom: 1px solid #232323;
 }
-nav li span:hover,
-nav li.active span {
-  cursor: pointer;
-  color: #B66DFF;
+header nav li span:hover,
+header nav li.active span {
+  color: #b66dff;
   background-color: #232323;
-  border-bottom-color: #B66DFF;
+  border-bottom-color: #b66dff;
 }
 a {
   text-decoration: none;
@@ -87,6 +91,16 @@ div.wrapper {
   color: #dbdbdb;
   background-color: #232323;
 }
+span.daily,
+span.iso3,
+span.iso3-detail {
+  cursor: pointer;
+  font-weight: 550;
+  color: #b66dff;
+}
+.noHeader {
+  display: none;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -109,11 +123,13 @@ div.wrapper {
   border-radius: 0.25em;
 }
 .label-success {
-  background-color: #B66DFF;
+  background-color: #b66dff;
   color: white;
   margin: 10px;
 }
-
+.modal-dialog {
+  max-width: 100%;
+}
 #span-rumus {
   margin: 10px;
   text-align: center;
@@ -218,9 +234,9 @@ select {
 }
 select:focus {
   outline: none;
-  border: 1.5px solid #B66DFF;
+  border: 1.5px solid #b66dff;
   border-radius: 0.15em;
-  color: #B66DFF;
+  color: #b66dff;
   font-weight: bold;
 }
 .select::after {
@@ -236,7 +252,7 @@ select:focus {
   transition: 0.25s all ease;
 }
 .select:hover::after {
-  color: #B66DFF;
+  color: #b66dff;
 }
 input.text-right {
   text-align: right;
@@ -254,7 +270,7 @@ input.text-right {
 }
 .a-input:focus {
   outline: none;
-  border-bottom: 1.5px solid #B66DFF;
-  color: #B66DFF;
+  border-bottom: 1.5px solid #b66dff;
+  color: #b66dff;
   font-weight: bold;
 }

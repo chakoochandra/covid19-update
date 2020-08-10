@@ -19,20 +19,37 @@
     </header>
 
     <main>
-        <div id="content">
-        </div>
-
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <div id="content"></div>
         <aside>
             <widget-clock></widget-clock>
-            <widget-profile src="images/foto.jpg" alt="Foto Profile" caption="Nobody" quote="When nothing goes right, go left."></widget-profile>
+            <widget-profile src="images/foto.jpg" alt="Foto Profile" caption="Nobody" quote="Source : https://github.com/mathdroid/covid19"></widget-profile>
         </aside>
     </main>
 
     <footer>
-        <p>Belajar Fundamental Front-End Web Development &#169; 2020, Dicoding Academy</p>
+        <p>copyright &#169; 2020</p>
     </footer>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="my-modal-title">Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="my-modal-body"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

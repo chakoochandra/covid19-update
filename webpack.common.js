@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
     entry: "./src/index.js",
@@ -43,13 +44,9 @@ module.exports = {
             template: "./src/index.html",
             filename: "index.html"
         }),
-        new HtmlWebpackPlugin({
-            template: "./src/konversi.html",
-            filename: "konversi.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/about.html",
-            filename: "about.html"
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
         }),
     ]
 }
